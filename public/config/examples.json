@@ -1,0 +1,246 @@
+[
+  {
+    "name": "info",
+    "label": "框架简介",
+    "examples": [
+      {
+        "name": "start",
+        "label": "开始"
+      },
+      {
+        "name": "coord",
+        "label": "底图坐标"
+      }
+    ]
+  },
+  {
+    "name": "baselayer",
+    "label": "基础底图",
+    "children": [
+      {
+        "name": "online",
+        "label": "在线地图",
+        "examples": [
+          {
+            "name": "google",
+            "label": "谷歌"
+          },
+          {
+            "name": "tdt",
+            "label": "天地图"
+          },
+          {
+            "name": "baidu",
+            "label": "百度"
+          },
+          {
+            "name": "amap",
+            "label": "高德"
+          },
+          {
+            "name": "tencent",
+            "label": "腾讯"
+          },
+          {
+            "name": "arcgis",
+            "label": "Arcgis"
+          }
+        ]
+      },
+      {
+        "name": "offline",
+        "label": "离线地图",
+        "examples": [
+          {
+            "name": "day",
+            "label": "单图片"
+          },
+          {
+            "name": "night",
+            "label": "单图片(夜晚)"
+          }
+        ]
+      },
+      {
+        "name": "setting",
+        "label": "地图效果",
+        "examples": [
+          {
+            "name": "param",
+            "label": "底图参数"
+          },
+          {
+            "name": "split",
+            "label": "双图对比"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "layer",
+    "label": "数据图层",
+    "examples": [
+      {
+        "name": "vector",
+        "label": "矢量图层"
+      },
+      {
+        "name": "cluster",
+        "label": "聚合图层"
+      },
+      {
+        "name": "tileset",
+        "label": "3DTiles图层"
+      },
+      {
+        "name": "geojson",
+        "label": "GeoJson图层"
+      },
+      {
+        "name": "html",
+        "label": "Html图层(plugins)"
+      },
+      {
+        "name": "czml",
+        "label": "Czml图层(plugins)"
+      },
+      {
+        "name": "kml",
+        "label": "Kml图层(plugins)"
+      }
+    ]
+  },
+  {
+    "name": "overlay",
+    "label": "矢量要素",
+    "children": [
+      {
+        "name": "point",
+        "label": "点要素",
+        "examples": [
+          {
+            "name": "point_base",
+            "label": "基本点"
+          },
+          {
+            "name": "point_text",
+            "label": "文字点"
+          },
+          {
+            "name": "point_icon",
+            "label": "图标点"
+          },
+          {
+            "name": "point_custom",
+            "label": "自定义图标点(plugins)"
+          },
+          {
+            "name": "point_html",
+            "label": "Html点(plugins)"
+          },
+          {
+            "name": "circle",
+            "label": "圆点"
+          },
+          {
+            "name": "circle_dynamic",
+            "label": "动画圆点(plugins)"
+          }
+        ]
+      },
+      {
+        "name": "polyline",
+        "label": "线状要素",
+        "examples": [
+          {
+            "name": "polyline_base",
+            "label": "基本线"
+          },
+          {
+            "name": "polyline_material",
+            "label": "材质线"
+          },
+          {
+            "name": "polyline_trial",
+            "label": "轨迹线(plugins)"
+          },
+          {
+            "name": "polyline_flow",
+            "label": "流动线(plugins)"
+          }
+        ]
+      },
+      {
+        "name": "polygon",
+        "label": "面状要素"
+      },
+      {
+        "name": "plane",
+        "label": "平面要素"
+      },
+      {
+        "name": "others",
+        "label": "其他要素"
+      }
+    ]
+  },
+  {
+    "name": "model",
+    "label": "模型要素",
+    "children": [
+      {
+        "name": "gltf",
+        "label": "小模型"
+      },
+      {
+        "name": "3dtiles",
+        "label": "大场景模型"
+      }
+    ]
+  },
+  {
+    "name": "scene",
+    "label": "场景设置",
+    "children": [
+      {
+        "name": "scene_base",
+        "label": "基础设置"
+      },
+      {
+        "name": "widget",
+        "label": "小组件"
+      },
+      {
+        "name": "camera",
+        "label": "相机控制"
+      },
+      {
+        "name": "event",
+        "label": "鼠标事件"
+      },
+      {
+        "name": "effect",
+        "label": "场景特效"
+      }
+    ]
+  },
+  {
+    "name": "datav",
+    "label": "数据可视化",
+    "children": [
+      {
+        "name": "datav_base",
+        "label": "基础"
+      },
+      {
+        "name": "echarts",
+        "label": "Echarts"
+      },
+      {
+        "name": "mapv",
+        "label": "MapV"
+      }
+    ]
+  }
+]
