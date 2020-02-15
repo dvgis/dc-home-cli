@@ -173,7 +173,25 @@
       },
       {
         "name": "polygon",
-        "label": "面状要素"
+        "label": "面状要素",
+        "examples": [
+          {
+            "name": "polygon_base",
+            "label": "基本面"
+          },
+          {
+            "name": "polygon_height",
+            "label": "高度面"
+          },
+          {
+            "name": "polygon_extruded",
+            "label": "拉升面"
+          },
+          {
+            "name": "polygon_holes",
+            "label": "含洞面"
+          }
+        ]
       },
       {
         "name": "plane",

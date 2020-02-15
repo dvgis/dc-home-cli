@@ -1,10 +1,18 @@
 <template>
   <div class="ly-head" :class="headClass">
     <div class="title">
-      <img src="../assets/images/logo.png" width="48px" height="48px" />
+      <svg-icon
+        icon-class="menu"
+        class-name="svg-icon hidden-md-and-up"
+        @on-click="drawer = true"
+      ></svg-icon>
+      <svg-icon
+        icon-class="logo"
+        style="width:48px;height:48px;margin-right:-5px;"
+      ></svg-icon>
       <font style="color:#fff;margin-left:10px">Digital Visual</font>
     </div>
-    <div class="menu">
+    <div class="menu-h">
       <el-menu
         :default-active="activeMenu"
         class="menu-list hidden-sm-and-down"
@@ -23,6 +31,47 @@
         class="icon-github"
         @click="gotoGitHub"
       />
+      <el-drawer
+        class="menu-drawer hidden-md-and-up"
+        append-to-body
+        :with-header="false"
+        direction="ltr"
+        :visible.sync="drawer"
+        size="50%"
+      >
+        <p class="logo">
+          <svg-icon icon-class="logo" class="svg-icon"></svg-icon>
+        </p>
+        <p class="title">
+          Digital Visual
+        </p>
+        <el-menu
+          :default-active="activeMenu"
+          class="menu-list"
+          @select="menuSelectHandler"
+        >
+          <el-menu-item index="home"
+            ><svg-icon icon-class="home" calss-name="menu-icon"></svg-icon
+            >首页</el-menu-item
+          >
+          <el-menu-item index="examples">
+            <svg-icon icon-class="examples" calss-name="menu-icon"></svg-icon
+            >示例</el-menu-item
+          >
+          <el-menu-item index="comps">
+            <svg-icon icon-class="comps" calss-name="menu-icon"></svg-icon
+            >组件</el-menu-item
+          >
+          <el-menu-item index="tools">
+            <svg-icon icon-class="tools" calss-name="menu-icon"></svg-icon
+            >工具</el-menu-item
+          >
+          <el-menu-item index="cesium">
+            <svg-icon icon-class="link" calss-name="menu-icon"></svg-icon
+            >Cesium</el-menu-item
+          >
+        </el-menu>
+      </el-drawer>
     </div>
   </div>
 </template>
@@ -30,7 +79,9 @@
 export default {
   name: 'LyHead',
   data() {
-    return {}
+    return {
+      drawer: false
+    }
   },
   computed: {
     headClass() {
@@ -55,6 +106,7 @@ export default {
           err
         })
       }
+      this.drawer = false
     },
     gotoGitHub() {
       window.open('https://github.com/Digital-Visual')
@@ -65,7 +117,7 @@ export default {
 
 <style lang="scss">
 .ly-head {
-  .menu {
+  .menu-h {
     .el-menu.el-menu--horizontal {
       border-bottom: solid 0px #e6e6e6;
       .el-menu-item {
@@ -74,7 +126,6 @@ export default {
         color: #fff;
         font-weight: bold;
         background: transparent;
-        border-bottom: 0 solid #409eff;
         font-size: 16px;
         &.is-active {
           color: #409eff;
@@ -84,7 +135,46 @@ export default {
     }
   }
 }
+
+.menu-drawer {
+  .logo {
+    text-align: center;
+    margin-top: 15px;
+    .svg-icon {
+      width: 70px;
+      height: 70px;
+      color: #0865ba;
+    }
+  }
+  .title {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    font-style: oblique;
+    background: linear-gradient(to right, rgb(241, 8, 40), #0865ba);
+    background-clip: text;
+    color: transparent;
+  }
+  .menu-list {
+    padding-left: 10px;
+    .svg-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+    }
+    .el-menu-item {
+      background: transparent;
+      border-bottom: 0 solid #409eff;
+      font-size: 17px;
+      color: rgba(0, 0, 0, 0.6);
+      &.is-active {
+        color: #409eff;
+      }
+    }
+  }
+}
 </style>
+
 <style lang="scss" scoped>
 .ly-head {
   position: absolute;
@@ -100,8 +190,12 @@ export default {
     font-style: oblique;
     display: flex;
     align-items: center;
+    .svg-icon {
+      cursor: pointer;
+      margin-right: 10px;
+    }
   }
-  .menu {
+  .menu-h {
     display: flex;
     align-items: center;
     .icon-github {

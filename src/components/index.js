@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2018-12-11 13:44:43
  * @Last Modified by: Caven
- * @Last Modified time: 2019-12-27 10:19:05
+ * @Last Modified time: 2020-02-14 23:35:53
  */
 import Vue from 'vue'
 
@@ -16,7 +16,11 @@ const componentsWatcher = scaner => {
     }
   })
 }
-const vueScaner = require.context('@/components', true, /^\.\/((?!\/)[\s\S])+\/index\.vue$/)
+const vueScaner = require.context(
+  '@/components',
+  true,
+  /^\.\/((?!\/)[\s\S])+\/index\.vue$/
+)
 componentsWatcher(vueScaner)
 
 const svgWatcher = scaner => scaner.keys().map(scaner)

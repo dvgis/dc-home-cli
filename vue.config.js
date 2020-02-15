@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2019-12-27 11:13:12
+ * @Last Modified time: 2020-02-14 19:17:05
  */
 'use strict'
 const path = require('path')
@@ -11,7 +11,7 @@ function resolve(dir) {
   return path.resolve(__dirname, dir)
 }
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/dc-home' : '/',
   productionSourceMap: false,
   configureWebpack: {
     module: {
