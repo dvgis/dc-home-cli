@@ -2,14 +2,16 @@
  * @Author: Caven
  * @Date: 2018-12-15 00:33:19
  * @Last Modified by: Caven
- * @Last Modified time: 2020-02-14 19:17:05
+ * @Last Modified time: 2020-02-18 10:07:46
  */
 'use strict'
 const path = require('path')
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
 
-function resolve(dir) {
+let resolve = dir => {
   return path.resolve(__dirname, dir)
 }
+
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production' ? '/dc-home' : '/',
   productionSourceMap: false,
@@ -60,5 +62,8 @@ module.exports = {
       .options({
         symbolId: 'icon-[name]'
       })
+      .end()
+
+    config.plugin('monaco-editor').use(MonacoWebpackPlugin)
   }
 }

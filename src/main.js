@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2019-12-23 13:28:54
  * @Last Modified by: Caven
- * @Last Modified time: 2019-12-27 11:11:15
+ * @Last Modified time: 2020-02-18 10:07:43
  */
 import Vue from 'vue'
 import appLoader from './App.Loader'
@@ -16,17 +16,19 @@ import appLoader from './App.Loader'
   global.Http.get('config/conf.json')
     .then(response => {
       global.config = response.data
-      Promise.all([import('@/App.vue'), import('@/router'), import('@/store')]).then(
-        ([{ default: App }, { default: router }, { default: store }]) => {
-          new Vue({
-            router,
-            store,
-            render: h => h(App)
-          }).$mount('#app')
-        }
-      )
+      Promise.all([
+        import('@/App.vue'),
+        import('@/router'),
+        import('@/store')
+      ]).then(([{ default: App }, { default: router }, { default: store }]) => {
+        new Vue({
+          router,
+          store,
+          render: h => h(App)
+        }).$mount('#app')
+      })
     })
     .catch(e => {
-      console.log(e)
+      //console.error(e)
     })
 })()

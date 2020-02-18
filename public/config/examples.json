@@ -10,6 +10,10 @@
       {
         "name": "coord",
         "label": "底图坐标"
+      },
+      {
+        "name": "online_code",
+        "label": "在线开发"
       }
     ]
   },
