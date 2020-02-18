@@ -50,26 +50,22 @@
           class="menu-list"
           @select="menuSelectHandler"
         >
-          <el-menu-item index="home"
-            ><svg-icon icon-class="home" calss-name="menu-icon"></svg-icon
-            >首页</el-menu-item
-          >
+          <el-menu-item index="home">
+            <svg-icon icon-class="home" calss-name="menu-icon"></svg-icon>首页
+          </el-menu-item>
           <el-menu-item index="examples">
             <svg-icon icon-class="examples" calss-name="menu-icon"></svg-icon
-            >示例</el-menu-item
-          >
+            >示例
+          </el-menu-item>
           <el-menu-item index="comps">
-            <svg-icon icon-class="comps" calss-name="menu-icon"></svg-icon
-            >组件</el-menu-item
-          >
+            <svg-icon icon-class="comps" calss-name="menu-icon"></svg-icon>组件
+          </el-menu-item>
           <el-menu-item index="tools">
-            <svg-icon icon-class="tools" calss-name="menu-icon"></svg-icon
-            >工具</el-menu-item
-          >
+            <svg-icon icon-class="tools" calss-name="menu-icon"></svg-icon>工具
+          </el-menu-item>
           <el-menu-item index="cesium">
-            <svg-icon icon-class="link" calss-name="menu-icon"></svg-icon
-            >Cesium</el-menu-item
-          >
+            <svg-icon icon-class="link" calss-name="menu-icon"></svg-icon>Cesium
+          </el-menu-item>
         </el-menu>
       </el-drawer>
     </div>
