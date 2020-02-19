@@ -19,7 +19,7 @@
         mode="horizontal"
         @select="menuSelectHandler"
       >
-        <el-menu-item index="home">首页</el-menu-item>
+        <el-menu-item index="index">首页</el-menu-item>
         <el-menu-item index="examples">示例</el-menu-item>
         <el-menu-item index="comps">组件</el-menu-item>
         <el-menu-item index="tools">工具</el-menu-item>
@@ -50,7 +50,7 @@
           class="menu-list"
           @select="menuSelectHandler"
         >
-          <el-menu-item index="home">
+          <el-menu-item index="index">
             <svg-icon icon-class="home" calss-name="menu-icon"></svg-icon>首页
           </el-menu-item>
           <el-menu-item index="examples">
@@ -84,7 +84,7 @@ export default {
       let clazz = ''
       if (this.$route.path === '/editor') {
         clazz = 'hide-head'
-      } else if (this.$route.path !== '/home') {
+      } else if (this.$route.path !== '/index') {
         clazz = 'bg-head'
       }
       return clazz
