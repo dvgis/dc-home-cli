@@ -30,11 +30,11 @@ yarn run publish
 
 ## PC
 
-![alt](http://dv.cavencj.cn/images/index.png)
-![alt](http://dv.cavencj.cn/images/examples.png)
+![width "100%"](http://dv.caven.cj/images/index.png)
+![width "100%"](http://dv.caven.cj/images/examples.png)
 
 ## Mobile
 
-![alt](http://dv.cavencj.cn/images/mobile_index.png)
-![alt](http://dv.cavencj.cn/images/mobile_menu.png)
-![alt](http://dv.cavencj.cn/images/mobile_examples.png)
+![width "30%"](http://dv.caven.cj/images/mobile_index.png)
+![width "30%"](http://dv.caven.cj/images/mobile_menu.png)
+![width "30%"](http://dv.caven.cj/images/mobile_examples.png)
