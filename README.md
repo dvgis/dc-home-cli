@@ -28,13 +28,6 @@ yarn serve 或者 yarn run serve
 yarn run publish
 ```
 
-## PC
-
-![width "100%"](http://dv.cavencj.cn/images/index.png)
-![width "100%"](http://dv.cavencj.cn/images/examples.png)
-
 ## Mobile
-
 ![width "30%"](http://dv.cavencj.cn/images/mobile_index.png)
-![width "30%"](http://dv.cavencj.cn/images/mobile_menu.png)
 ![width "30%"](http://dv.cavencj.cn/images/mobile_examples.png)
