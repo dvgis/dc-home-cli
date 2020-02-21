@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="banner">
-      <p>-- 用数字呈现世界之美</p>
+      <p>-- 基于 Cesium 进行二次开发的 3D Gis 框架</p>
     </div>
     <div class="info">
       <el-row justify="space-around">

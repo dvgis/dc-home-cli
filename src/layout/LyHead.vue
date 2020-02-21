@@ -10,7 +10,12 @@
         icon-class="logo"
         style="width:48px;height:48px;margin-right:-5px;"
       ></svg-icon>
-      <font style="color:#fff;margin-left:10px">Digital Visual</font>
+      <font style="color:#fff;margin-left:10px">D C</font>
+      <sub
+        class="hidden-md-and-down"
+        style="margin-left:10px;font-size:16px;color:orange"
+        >( Digital Visual for Cesium )</sub
+      >
     </div>
     <div class="menu-h">
       <el-menu
@@ -43,7 +48,7 @@
           <svg-icon icon-class="logo" class="svg-icon"></svg-icon>
         </p>
         <p class="title">
-          Digital Visual
+          D C
         </p>
         <el-menu
           :default-active="activeMenu"
@@ -105,7 +110,7 @@ export default {
       this.drawer = false
     },
     gotoGitHub() {
-      window.open('https://github.com/Digital-Visual')
+      window.open('https://github.com/Digital-Visual/dc-sdk')
     }
   }
 }
