@@ -19,7 +19,7 @@
             <p>5.Mapv示例使用时需要引用官方的框架包和DC-Mapv</p>
             <p>
               6.如果需要额外的示例或者示例存在的问题，请联系&nbsp;<a
-                href="https://github.com/caven-chen"
+                href="https://github.com/cavencj"
                 >Caven Chen</a
               >
             </p>

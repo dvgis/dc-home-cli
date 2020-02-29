@@ -166,12 +166,14 @@
             "label": "材质线"
           },
           {
-            "name": "polyline_trial",
-            "label": "轨迹线(plugins)"
+            "name": "polyline_trail",
+            "label": "轨迹线(plugins)",
+            "suffix": "gif"
           },
           {
             "name": "polyline_flow",
-            "label": "流动线(plugins)"
+            "label": "流动线(plugins)",
+            "suffix": "gif"
           }
         ]
       },
@@ -227,23 +229,116 @@
     "children": [
       {
         "name": "scene_base",
-        "label": "基础设置"
+        "label": "基础设置",
+        "examples": [
+          {
+            "name": "2D",
+            "label": "2D模式"
+          },
+          {
+            "name": "globe",
+            "label": "地球隐藏"
+          },
+          {
+            "name": "background",
+            "label": "背景隐藏"
+          },
+          {
+            "name": "underground",
+            "label": "地下模式"
+          }
+        ]
       },
       {
         "name": "widget",
-        "label": "小组件"
+        "label": "小组件",
+        "examples": [
+          {
+            "name": "tooltip",
+            "label": "鼠标提示"
+          },
+          {
+            "name": "contextmenu",
+            "label": "右击菜单"
+          },
+          {
+            "name": "popup",
+            "label": "信息弹出框"
+          }
+        ]
       },
       {
         "name": "camera",
-        "label": "相机控制"
+        "label": "相机控制",
+        "examples": [
+          {
+            "name": "pitch_range",
+            "label": "翻转范围"
+          },
+          {
+            "name": "limitCameraToGround",
+            "label": "禁止进入地下"
+          },
+          {
+            "name": "camera_event",
+            "label": "相机变化事件"
+          }
+        ]
       },
       {
         "name": "event",
-        "label": "鼠标事件"
+        "label": "事件控制",
+        "examples": [
+          {
+            "name": "viewer_event",
+            "label": "场景鼠标"
+          },
+          {
+            "name": "overlay_event",
+            "label": "覆盖物鼠标"
+          },
+          {
+            "name": "camera_move_end",
+            "label": "相机移动结束后(慎用)"
+          },
+          {
+            "name": "pre_render",
+            "label": "场景渲染前(慎用)"
+          },
+          {
+            "name": "post_render",
+            "label": "场景渲染后(慎用)"
+          },
+          {
+            "name": "morph_complete",
+            "label": "场景模式转换完成(慎用)"
+          },
+          {
+            "name": "clock_tick",
+            "label": "时间跳动(慎用)"
+          }
+        ]
       },
       {
         "name": "effect",
-        "label": "场景特效"
+        "label": "场景特效",
+        "examples": [
+          {
+            "name": "globe_rotate",
+            "label": "地球自转(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "circle_scan",
+            "label": "扫描圈(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "radar_scan",
+            "label": "雷达扫描(plugins)",
+            "suffix": "gif"
+          }
+        ]
       }
     ]
   },

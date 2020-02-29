@@ -81,6 +81,11 @@ export default {
 </script>
 
 <style lang="scss">
+.example-list {
+  .el-divider {
+    background-color: #0865ba !important;
+  }
+}
 @media (max-width: 768px) {
   .example-list {
     .card-list {
