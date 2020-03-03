@@ -28,7 +28,10 @@
         <div v-if="item.children && item.children.length > 0">
           <template v-for="child in item.children">
             <div :key="child.name">
-              <p style="margin-top:20px;padding-left:25px;font-size:16px">
+              <p
+                style="margin-top:20px;padding-left:25px;font-size:16px"
+                :id="'nav-' + child.name"
+              >
                 {{ child.label }}
               </p>
               <div

@@ -62,6 +62,10 @@
           {
             "name": "night",
             "label": "单图片(夜晚)"
+          },
+          {
+            "name": "blue",
+            "label": "单图片(蓝色)"
           }
         ]
       },
@@ -352,11 +356,92 @@
       },
       {
         "name": "echarts",
-        "label": "Echarts"
+        "label": "Echarts",
+        "examples": [
+          {
+            "name": "e_pm2.5",
+            "label": "空气质量"
+          },
+          {
+            "name": "e_pm2.5_2",
+            "label": "空气质量"
+          },
+          {
+            "name": "e_plane",
+            "label": "飞机",
+            "suffix": "gif"
+          },
+          {
+            "name": "e_airline",
+            "label": "航线",
+            "suffix": "gif"
+          },
+          {
+            "name": "e_rk",
+            "label": "人口迁徙",
+            "suffix": "gif"
+          },
+          {
+            "name": "e_qx",
+            "label": "人口迁徙",
+            "suffix": "gif"
+          },
+          {
+            "name": "e_wl",
+            "label": "物流线路",
+            "suffix": "gif"
+          }
+        ]
       },
       {
         "name": "mapv",
-        "label": "MapV"
+        "label": "MapV",
+        "examples": [
+          {
+            "name": "m_point",
+            "label": "点(plugins)"
+          },
+          {
+            "name": "m_point_d",
+            "label": "动画点(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "m_point_i",
+            "label": "强度点(plugins)"
+          },
+          {
+            "name": "m_grid",
+            "label": "方格图(plugins)"
+          },
+          {
+            "name": "m_grid_d",
+            "label": "方格动画图(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "m_honeycomb",
+            "label": "蜂巢图(plugins)"
+          },
+          {
+            "name": "m_honeycomb_d",
+            "label": "蜂巢动画图(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "m_polyline",
+            "label": "线(plugins)"
+          },
+          {
+            "name": "m_polyline_d",
+            "label": "动画线(plugins)",
+            "suffix": "gif"
+          },
+          {
+            "name": "m_polyline_i",
+            "label": "强度线(plugins)"
+          }
+        ]
       }
     ]
   }

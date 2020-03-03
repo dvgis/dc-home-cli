@@ -212,7 +212,12 @@ export default {
   }
 
   &.bg-head {
-    background: #0865ba;
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8),
+      rgba(1, 13, 30, 0.8),
+      rgba(0, 0, 0, 0.8)
+    );
   }
 
   &.hide-head {

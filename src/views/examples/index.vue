@@ -104,7 +104,7 @@ export default {
     height: calc(100% - 66px);
   }
   .menu {
-    background: #0865ba;
+    background: rgb(34, 37, 48);
     height: 100%;
     padding-top: 20px;
     padding-left: 10px;

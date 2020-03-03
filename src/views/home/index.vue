@@ -5,7 +5,7 @@
     </div>
     <div class="info">
       <el-row justify="space-around">
-        <el-col :sm="24" :lg="6">
+        <el-col :sm="24" :lg="7">
           <div class="info-item">
             <div class="icon-border">
               <svg-icon icon-class="opensource" class="icon"></svg-icon>
@@ -14,7 +14,7 @@
             <p>遵循 Apache-2.0 开源协议，免费商用</p>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="6">
+        <el-col :sm="24" :lg="5">
           <div class="info-item">
             <div class="icon-border">
               <svg-icon icon-class="easyuse" class="icon"></svg-icon>
@@ -23,7 +23,7 @@
             <p>用极简的代码就可实现3D功能开发</p>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="6">
+        <el-col :sm="24" :lg="5">
           <div class="info-item">
             <div class="icon-border">
               <svg-icon icon-class="functional" class="icon"></svg-icon>
@@ -32,7 +32,7 @@
             <p>提供满足各类的业务功能接口和组件</p>
           </div>
         </el-col>
-        <el-col :sm="24" :lg="6">
+        <el-col :sm="24" :lg="7">
           <div class="info-item">
             <div class="icon-border">
               <svg-icon icon-class="tools" class="icon"></svg-icon>
@@ -59,10 +59,22 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  overflow-y: auto;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 200px);
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    );
+  }
   .banner {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 200px);
     background: url('../../assets/images/bg.jpg');
     background-size: 100% 100%;
     overflow: hidden;
@@ -75,6 +87,7 @@ export default {
       overflow: hidden;
     }
   }
+
   .info {
     padding: 20px 0;
     .info-item {
@@ -83,15 +96,15 @@ export default {
       align-items: center;
       margin-top: 30px;
       .icon-border {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border: 1px solid #cecece;
         border-radius: 50%;
         display: flex;
         align-items: center;
         .icon {
           width: 120px;
-          height: 50px;
+          height: 32px;
         }
       }
       h3 {
