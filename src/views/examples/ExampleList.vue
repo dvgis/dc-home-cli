@@ -22,7 +22,12 @@
               :src="getImgPath(item.name, example)"
               @click="gotoEditor(item.name, example)"
             />
-            <p>{{ example.label }}</p>
+            <p>
+              {{ example.label
+              }}<font color="orange" v-if="example.isPlugin">
+                [插件]
+              </font>
+            </p>
           </el-card>
         </div>
         <div v-if="item.children && item.children.length > 0">
@@ -50,7 +55,12 @@
                     :src="getImgPath(item.name, example)"
                     @click="gotoEditor(item.name, example)"
                   />
-                  <p>{{ example.label }}</p>
+                  <p>
+                    {{ example.label
+                    }}<font color="orange" v-if="example.isPlugin">
+                      [插件]
+                    </font>
+                  </p>
                 </el-card>
               </div>
             </div>

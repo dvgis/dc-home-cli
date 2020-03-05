@@ -107,15 +107,18 @@
       },
       {
         "name": "html",
-        "label": "Html图层(plugins)"
+        "label": "Html图层",
+        "isPlugin": true
       },
       {
         "name": "czml",
-        "label": "Czml图层(plugins)"
+        "label": "Czml图层",
+        "isPlugin": true
       },
       {
         "name": "kml",
-        "label": "Kml图层(plugins)"
+        "label": "Kml图层",
+        "isPlugin": true
       }
     ]
   },
@@ -141,11 +144,13 @@
           },
           {
             "name": "point_custom",
-            "label": "自定义图标点(plugins)"
+            "label": "自定义图标点",
+            "isPlugin": true
           },
           {
             "name": "point_html",
-            "label": "Html点(plugins)"
+            "label": "Html点",
+            "isPlugin": true
           },
           {
             "name": "circle",
@@ -153,7 +158,8 @@
           },
           {
             "name": "circle_dynamic",
-            "label": "动画圆点(plugins)"
+            "label": "动画圆点",
+            "isPlugin": true
           }
         ]
       },
@@ -176,7 +182,8 @@
           },
           {
             "name": "polyline_flow",
-            "label": "流动线(plugins)",
+            "label": "流动线",
+            "isPlugin": true,
             "suffix": "gif"
           }
         ]
@@ -329,17 +336,20 @@
         "examples": [
           {
             "name": "globe_rotate",
-            "label": "地球自转(plugins)",
+            "label": "地球自转",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "circle_scan",
-            "label": "扫描圈(plugins)",
+            "label": "扫描圈",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "radar_scan",
-            "label": "雷达扫描(plugins)",
+            "label": "雷达扫描",
+            "isPlugin": true,
             "suffix": "gif"
           }
         ]
@@ -399,47 +409,57 @@
         "examples": [
           {
             "name": "m_point",
-            "label": "点(plugins)"
+            "label": "点",
+            "isPlugin": true
           },
           {
             "name": "m_point_d",
-            "label": "动画点(plugins)",
+            "label": "动画点)",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_point_i",
-            "label": "强度点(plugins)"
+            "label": "强度点",
+            "isPlugin": true
           },
           {
             "name": "m_grid",
-            "label": "方格图(plugins)"
+            "label": "方格图",
+            "isPlugin": true
           },
           {
             "name": "m_grid_d",
-            "label": "方格动画图(plugins)",
+            "label": "方格动画图",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_honeycomb",
-            "label": "蜂巢图(plugins)"
+            "label": "蜂巢图",
+            "isPlugin": true
           },
           {
             "name": "m_honeycomb_d",
-            "label": "蜂巢动画图(plugins)",
+            "label": "蜂巢动画图",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_polyline",
-            "label": "线(plugins)"
+            "label": "线",
+            "isPlugin": true
           },
           {
             "name": "m_polyline_d",
-            "label": "动画线(plugins)",
+            "label": "动画线",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_polyline_i",
-            "label": "强度线(plugins)"
+            "label": "强度线",
+            "isPlugin": true
           }
         ]
       }
