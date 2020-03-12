@@ -275,6 +275,10 @@
           {
             "name": "popup",
             "label": "信息弹出框"
+          },
+          {
+            "name": "locationbar",
+            "label": "位置信息"
           }
         ]
       },
