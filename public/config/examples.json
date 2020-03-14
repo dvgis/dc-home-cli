@@ -157,8 +157,14 @@
             "label": "圆点"
           },
           {
-            "name": "circle_dynamic",
-            "label": "动画圆点",
+            "name": "circle_d",
+            "label": "动画圆",
+            "suffix": "gif"
+          },
+          {
+            "name": "circle_wave",
+            "label": "波纹圆",
+            "suffix": "gif",
             "isPlugin": true
           }
         ]

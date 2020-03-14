@@ -27,9 +27,7 @@
               >。
             </p>
             <p>
-              5.Mapv示例使用时需要引用官方的框架包和<font color="orange">
-                DC-Mapv </font
-              >。
+              5.Mapv示例使用时需要引用<font color="orange"> DC-Mapv </font>。
             </p>
             <p>
               6.如果需要额外的示例或者示例存在的问题，请联系&nbsp;<a
