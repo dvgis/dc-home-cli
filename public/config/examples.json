@@ -114,11 +114,6 @@
         "name": "czml",
         "label": "Czml图层",
         "isPlugin": true
-      },
-      {
-        "name": "kml",
-        "label": "Kml图层",
-        "isPlugin": true
       }
     ]
   },
@@ -143,6 +138,10 @@
             "label": "图标点"
           },
           {
+            "name": "point_icon_m",
+            "label": "一万图标点"
+          },
+          {
             "name": "point_custom",
             "label": "自定义图标点",
             "isPlugin": true
@@ -150,21 +149,6 @@
           {
             "name": "point_html",
             "label": "Html点",
-            "isPlugin": true
-          },
-          {
-            "name": "circle",
-            "label": "圆点"
-          },
-          {
-            "name": "circle_d",
-            "label": "动画圆",
-            "suffix": "gif"
-          },
-          {
-            "name": "circle_wave",
-            "label": "波纹圆",
-            "suffix": "gif",
             "isPlugin": true
           }
         ]
@@ -213,6 +197,27 @@
           {
             "name": "polygon_holes",
             "label": "含洞面"
+          }
+        ]
+      },
+      {
+        "name": "circle",
+        "label": "园要素",
+        "examples": [
+          {
+            "name": "circle",
+            "label": "圆点"
+          },
+          {
+            "name": "circle_d",
+            "label": "动画圆",
+            "suffix": "gif"
+          },
+          {
+            "name": "circle_wave",
+            "label": "波纹圆",
+            "suffix": "gif",
+            "isPlugin": true
           }
         ]
       },
@@ -285,6 +290,10 @@
           {
             "name": "locationbar",
             "label": "位置信息"
+          },
+          {
+            "name": "hawkeyeMap",
+            "label": "鹰眼地图"
           }
         ]
       },
