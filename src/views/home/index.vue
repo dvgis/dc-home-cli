@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="banner">
-      <p>-- 基于 Cesium 进行二次开发的 3D Gis 框架</p>
+      <p>-- 基于 Cesium 进行二次开发的 3D Gis 平台</p>
     </div>
     <div class="info">
       <el-row justify="space-around">
@@ -43,11 +43,16 @@
         </el-col>
       </el-row>
     </div>
+    <ly-foot></ly-foot>
   </div>
 </template>
 <script>
+import LyFoot from '@/layout/LyFoot'
 export default {
   name: 'Home',
+  components: {
+    LyFoot
+  },
   data() {
     return {}
   }
@@ -56,26 +61,9 @@ export default {
 
 <style lang="scss" scoped>
 .home {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: calc(100% - 200px);
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)
-    );
-  }
   .banner {
     width: 100%;
-    height: calc(100% - 200px);
+    height: 600px;
     background: url('../../assets/images/bg.jpg');
     background-size: 100% 100%;
     overflow: hidden;
@@ -91,6 +79,7 @@ export default {
 
   .info {
     padding: 20px 0;
+    min-height: 220px;
     .info-item {
       display: flex;
       flex-direction: column;

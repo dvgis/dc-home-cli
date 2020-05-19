@@ -3,7 +3,7 @@
     <el-menu
       :default-active="defaultActive"
       unique-opened
-      active-text-color="rgb(19, 227, 241)"
+      active-text-color="#0865ba"
       @select="slectMenuHandler"
       @open="slectMenuHandler"
     >
@@ -78,8 +78,7 @@ export default {
   .el-menu-item,
   .el-submenu__title,
   .el-submenu__title i {
-    color: #fff;
-    font-weight: bold;
+    color: #000;
     background: transparent;
   }
 }
@@ -88,7 +87,7 @@ export default {
 <style lang="scss" scoped>
 .sider-bar {
   .icon-svg {
-    color: #fff;
+    color: #000;
     width: 20px;
     height: 20px;
     position: relative;

@@ -11,9 +11,7 @@
         style="width:48px;height:48px;margin-right:-5px;"
       ></svg-icon>
       <font style="color:#fff;margin-left:10px">D C</font>
-      <sub
-        class="hidden-md-and-down"
-        style="margin-left:10px;font-size:16px;color:orange"
+      <sub class="hidden-md-and-down" style="margin-left:10px;font-size:12px;"
         >( Digital Visual for Cesium )</sub
       >
     </div>
@@ -25,11 +23,14 @@
         @select="menuSelectHandler"
       >
         <el-menu-item index="index">首页</el-menu-item>
-        <el-menu-item index="examples">示例</el-menu-item>
-        <el-menu-item index="comps">组件</el-menu-item>
-        <el-menu-item index="tools">工具</el-menu-item>
-        <el-menu-item index="docs">文档</el-menu-item>
-        <el-menu-item index="cesium">Cesium</el-menu-item>
+        <el-menu-item index="examples">开发示例</el-menu-item>
+        <el-submenu index="docs">
+          <template slot="title">开发文档</template>
+          <el-menu-item index="api">DC-SDK-API</el-menu-item>
+          <el-menu-item index="cesium-api">Cesium-API</el-menu-item>
+        </el-submenu>
+
+        <el-menu-item index="tec">技术专题</el-menu-item>
       </el-menu>
       <img
         src="../assets/images/github.png"
@@ -60,16 +61,7 @@
           </el-menu-item>
           <el-menu-item index="examples">
             <svg-icon icon-class="examples" calss-name="menu-icon"></svg-icon
-            >示例
-          </el-menu-item>
-          <el-menu-item index="comps">
-            <svg-icon icon-class="comps" calss-name="menu-icon"></svg-icon>组件
-          </el-menu-item>
-          <el-menu-item index="tools">
-            <svg-icon icon-class="tools" calss-name="menu-icon"></svg-icon>工具
-          </el-menu-item>
-          <el-menu-item index="cesium">
-            <svg-icon icon-class="link" calss-name="menu-icon"></svg-icon>Cesium
+            >开发示例
           </el-menu-item>
         </el-menu>
       </el-drawer>
@@ -102,6 +94,10 @@ export default {
     menuSelectHandler(index) {
       if (index === 'cesium') {
         window.open('https://cesium.com/cesiumjs/')
+      } else if (index === 'api') {
+        window.open('http://resource.dvgis.cn/dc-api/api/')
+      } else if (index === 'cesium-api') {
+        window.open('https://cesium.com/docs/cesiumjs-ref-doc/')
       } else {
         this.$router.push(index).catch(err => {
           err
@@ -121,12 +117,27 @@ export default {
   .menu-h {
     .el-menu.el-menu--horizontal {
       border-bottom: solid 0px #e6e6e6;
+      background: transparent;
+      .el-submenu__title {
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        font-size: 16px;
+        &:hover {
+          background: transparent;
+        }
+
+        i {
+          color: #fff;
+        }
+      }
       .el-menu-item {
         height: 40px;
         line-height: 40px;
-        color: #fff;
-        font-weight: bold;
+        color: #fff !important;
         background: transparent;
+        font-weight: bold;
         font-size: 16px;
         &.is-active {
           color: #409eff;
@@ -199,24 +210,24 @@ export default {
   .menu-h {
     display: flex;
     align-items: center;
+    .menu-list {
+      background: rgba(0, 0, 0, 0);
+      color: #fff;
+    }
     .icon-github {
       cursor: pointer;
       width: 32px;
       height: 32px;
       margin-left: 30px;
     }
-    .menu-list {
-      background: rgba(0, 0, 0, 0);
-      color: #fff;
-    }
   }
 
   &.bg-head {
     background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(1, 13, 30, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(23, 98, 217, 1),
+      rgba(10, 82, 200, 1),
+      rgba(1, 49, 150, 1)
     );
   }
 

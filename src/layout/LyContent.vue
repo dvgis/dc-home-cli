@@ -17,7 +17,7 @@ export default {
   position: relative;
   width: 100%;
   background: #fff;
-  height: calc(100%);
+  height: 100%;
   overflow: hidden;
 }
 </style>

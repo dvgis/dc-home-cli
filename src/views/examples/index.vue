@@ -110,20 +110,22 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding-top: 60px;
+  margin-top: 59px;
+  background: #f7f8fa;
   .row,
   .col {
-    height: calc(100% - 66px);
+    height: calc(100% - 60px);
   }
   .menu {
-    background: rgb(34, 37, 48);
-    height: 100%;
+    height: calc(100% - 30px);
     padding-top: 20px;
     padding-left: 10px;
     overflow: hidden;
-    margin-top: 6px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
+    margin-top: 20px;
+    //margin-left: 5px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 4px 0 4px #c1c1c1;
   }
   .content {
     height: 100%;
@@ -134,6 +136,10 @@ export default {
       font-size: 13px;
       color: rgba(0, 0, 0, 0.6);
       margin-bottom: 10px;
+      margin-top: 10px;
+      background: #fff;
+      box-shadow: 8px 0 8px #c1c1c1;
+      padding: 5px 5px;
       p {
         padding-top: 5px;
       }

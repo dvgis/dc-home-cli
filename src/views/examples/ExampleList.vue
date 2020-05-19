@@ -34,7 +34,7 @@
           <template v-for="child in item.children">
             <div :key="child.name">
               <p
-                style="margin-top:20px;padding-left:25px;font-size:16px"
+                style="margin-top:20px;padding-left:25px;font-size:16px;margin-bottom:10px;"
                 :id="'nav-' + child.name"
               >
                 {{ child.label }}
@@ -96,7 +96,7 @@ export default {
 <style lang="scss">
 .example-list {
   .el-divider {
-    background-color: #0865ba !important;
+    background-color: #1c6ab3 !important;
   }
 }
 @media (max-width: 768px) {
@@ -127,6 +127,9 @@ export default {
   }
   .card-list {
     display: grid;
+    box-shadow: 4px 0 4px #c1c1c1;
+    border-radius: 4px;
+    background: #fff;
     grid-template-columns: repeat(5, 20%);
     padding-left: 25px;
     .card {

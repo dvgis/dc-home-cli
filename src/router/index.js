@@ -2,7 +2,7 @@
  * @Author: Caven
  * @Date: 2019-12-23 13:38:32
  * @Last Modified by: Caven
- * @Last Modified time: 2020-02-19 12:42:35
+ * @Last Modified time: 2020-05-19 14:20:09
  */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -25,21 +25,6 @@ const routes = [
         path: '/examples',
         name: 'examples',
         component: () => import('../views/examples/index.vue')
-      },
-      {
-        path: '/comps',
-        name: 'comps',
-        component: () => import('../views/comps/index.vue')
-      },
-      {
-        path: '/tools',
-        name: 'tools',
-        component: () => import('../views/tools/index.vue')
-      },
-      {
-        path: '/docs',
-        name: 'docs',
-        component: () => import('../views/docs/index.vue')
       },
       {
         path: '/editor',
