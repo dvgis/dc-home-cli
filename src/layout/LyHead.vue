@@ -1,5 +1,6 @@
 <template>
   <div class="ly-head" :class="headClass">
+    <div class="head-bg"></div>
     <div class="title">
       <svg-icon
         icon-class="menu"
@@ -8,7 +9,7 @@
       ></svg-icon>
       <svg-icon
         icon-class="logo"
-        style="width:48px;height:48px;margin-right:-5px;"
+        style="width:30px;height:30px;margin-right:-5px;"
       ></svg-icon>
       <font style="color:#fff;margin-left:10px">D C</font>
       <sub class="hidden-md-and-down" style="margin-left:10px;font-size:12px;"
@@ -24,13 +25,11 @@
       >
         <el-menu-item index="index">首页</el-menu-item>
         <el-menu-item index="examples">开发示例</el-menu-item>
-        <el-submenu index="docs">
+        <el-submenu index="docs" popper-class="menu-box">
           <template slot="title">开发文档</template>
-          <el-menu-item index="api">DC-SDK-API</el-menu-item>
-          <el-menu-item index="cesium-api">Cesium-API</el-menu-item>
+          <el-menu-item index="api">DC-SDK API </el-menu-item>
+          <el-menu-item index="cesium-api">Cesium API</el-menu-item>
         </el-submenu>
-
-        <el-menu-item index="tec">技术专题</el-menu-item>
       </el-menu>
       <img
         src="../assets/images/github.png"
@@ -115,7 +114,7 @@ export default {
 <style lang="scss">
 .ly-head {
   .menu-h {
-    .el-menu.el-menu--horizontal {
+    .el-menu--horizontal.el-menu {
       border-bottom: solid 0px #e6e6e6;
       background: transparent;
       .el-submenu__title {
@@ -136,7 +135,7 @@ export default {
         height: 40px;
         line-height: 40px;
         color: #fff !important;
-        background: transparent;
+        background-color: transparent !important;
         font-weight: bold;
         font-size: 16px;
         &.is-active {
@@ -185,18 +184,36 @@ export default {
     }
   }
 }
+
+.menu-box {
+  margin-top: 6px;
+  .el-menu {
+    background: #1a1a1a !important;
+    border-radius: 4px;
+    padding-left: 10px;
+    min-height: 50px;
+  }
+  .el-menu-item {
+    background-color: transparent !important;
+    font-size: 16px;
+    color: #fff !important;
+    &:hover {
+      color: #fff !important;
+    }
+  }
+}
 </style>
 
 <style lang="scss" scoped>
 .ly-head {
   position: absolute;
   height: 60px;
-  width: calc(100% - 40px);
+  width: calc(100%);
   z-index: 1;
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px 0 20px;
   .title {
+    margin-left: 20px;
     color: #fff;
     font-size: 25px;
     font-style: oblique;
@@ -211,28 +228,40 @@ export default {
     display: flex;
     align-items: center;
     .menu-list {
-      background: rgba(0, 0, 0, 0);
+      background: transparent;
       color: #fff;
     }
+
     .icon-github {
       cursor: pointer;
       width: 32px;
       height: 32px;
-      margin-left: 30px;
+      margin-left: 50px;
+      margin-right: 20px;
     }
   }
 
+  .head-bg {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+  }
+
   &.bg-head {
-    background: linear-gradient(
-      to right,
-      rgba(23, 98, 217, 1),
-      rgba(10, 82, 200, 1),
-      rgba(1, 49, 150, 1)
-    );
+    background: rgb(0, 23, 72);
   }
 
   &.hide-head {
     display: none;
+  }
+
+  &:hover {
+    .head-bg {
+      display: block;
+    }
   }
 }
 </style>

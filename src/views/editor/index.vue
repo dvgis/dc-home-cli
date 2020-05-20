@@ -53,7 +53,7 @@
     <div
       class="example"
       ref="example"
-      :style="{ width: codeVisible ? '70%' : '100%' }"
+      :style="{ width: codeVisible ? '70%' : '100%', height: '100%' }"
     ></div>
   </div>
 </template>
@@ -208,9 +208,9 @@ export default {
 <style lang="scss" scoped>
 .editor {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
   display: flex;
+  overflow: hidden;
   .code {
     height: 100%;
     width: 30%;

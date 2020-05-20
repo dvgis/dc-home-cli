@@ -6,14 +6,11 @@
 </template>
 
 <script>
-import LyHead from '@/layout/LyHead'
-import LyContent from '@/layout/LyContent'
-
 export default {
   name: 'Home',
   components: {
-    LyHead,
-    LyContent
+    LyHead: () => import('@/layout/LyHead'),
+    LyContent: () => import('@/layout/LyContent')
   },
   data() {
     return {}
@@ -28,8 +25,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+  min-height: 500px;
+  display: block;
 }
 </style>

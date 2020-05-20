@@ -3,7 +3,7 @@
     <el-menu
       :default-active="defaultActive"
       unique-opened
-      active-text-color="#0865ba"
+      active-text-color="#409eff"
       @select="slectMenuHandler"
       @open="slectMenuHandler"
     >

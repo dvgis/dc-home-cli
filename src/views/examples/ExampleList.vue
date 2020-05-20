@@ -127,8 +127,8 @@ export default {
   }
   .card-list {
     display: grid;
-    box-shadow: 4px 0 4px #c1c1c1;
-    border-radius: 4px;
+    box-shadow: 2px 2px 2px #c1c1c1;
+    border-radius: 10px;
     background: #fff;
     grid-template-columns: repeat(5, 20%);
     padding-left: 25px;

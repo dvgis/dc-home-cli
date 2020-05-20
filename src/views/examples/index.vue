@@ -107,28 +107,25 @@ export default {
 <style lang="scss" scoped>
 .examples {
   position: relative;
-  width: 100%;
-  height: 100%;
   overflow: hidden;
-  margin-top: 59px;
   background: #f7f8fa;
+  padding-top: 59px;
   .row,
   .col {
-    height: calc(100% - 60px);
+    height: calc(100vh - 90px);
+    padding: 0 0 0 10px;
   }
   .menu {
-    height: calc(100% - 30px);
+    height: 100%;
     padding-top: 20px;
     padding-left: 10px;
-    overflow: hidden;
     margin-top: 20px;
-    //margin-left: 5px;
-    border-radius: 4px;
     background: #fff;
-    box-shadow: 4px 0 4px #c1c1c1;
+    box-shadow: 2px 2px 2px #c1c1c1;
+    border-radius: 10px;
   }
   .content {
-    height: 100%;
+    height: calc(100%);
     padding: 10px 20px 60px 20px;
     overflow: hidden;
     overflow-y: auto;
@@ -138,10 +135,11 @@ export default {
       margin-bottom: 10px;
       margin-top: 10px;
       background: #fff;
-      box-shadow: 8px 0 8px #c1c1c1;
-      padding: 5px 5px;
+      box-shadow: 2px 2px 2px #c1c1c1;
+      border-radius: 10px;
+      padding: 10px 15px;
       p {
-        padding-top: 5px;
+        padding-top: 10px;
       }
       a {
         text-decoration: none;

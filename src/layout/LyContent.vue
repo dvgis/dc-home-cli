@@ -15,9 +15,7 @@ export default {
 <style lang="scss" scoped>
 .ly-content {
   position: relative;
-  width: 100%;
+  min-height: 500px;
   background: #fff;
-  height: 100%;
-  overflow: hidden;
 }
 </style>
