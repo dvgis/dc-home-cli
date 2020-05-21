@@ -5,8 +5,7 @@
         <h2>基于开源 + 代码可控</h2>
         <div class="desc">
           平台基于开源项目Cesium进行的二次开发，优化了一些Cesium的使用问题，
-          同时集成了一些第三方的Gis相关的常用的地图库或开源库,
-          如：Echarts、Mapv、Heatmap、Turf。
+          同时集成了一些第三方常用的地图库或开源库,如：Echarts、Mapv、Heatmap、Turf。
         </div>
       </div>
       <img src="../../../assets/images/1.png" class="module_img" />
