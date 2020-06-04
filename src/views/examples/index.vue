@@ -12,28 +12,40 @@
         <div class="content" ref="content">
           <div class="tips">
             <span>说明：</span>
-            <p>1.示例仅做参考，展现的数据只是测试数据。</p>
+            <p>1. 示例仅做参考，展现的数据只是测试数据。</p>
             <p>
-              2.示例是以<font color="orange"> DC-SDK </font
+              2. 示例是以<font color="orange"> DC-SDK </font
               >为基础开发的,该SDK中使用的 Cesium 为最新版本。
             </p>
             <p>
-              3.含有<font color="orange"> [插件] </font
+              3. 含有<font color="orange"> [插件] </font
               >的示例开发时需要引入plugins的框架包。
             </p>
             <p>
-              4.Echarts示例使用时需要引用官方的框架包和<font color="orange">
+              4. Echarts 示例使用时需要引用官方的框架包和<font color="orange">
                 DC-Chart </font
               >。
             </p>
             <p>
-              5.Mapv示例使用时需要引用<font color="orange"> DC-Mapv </font>。
+              5. Mapv 示例使用时需要引用<font color="orange"> DC-Mapv </font>。
             </p>
             <p>
-              6.如果需要额外的示例或者示例存在的问题，请联系&nbsp;<a
-                href="https://github.com/cavencj"
-                >Caven Chen </a
-              >。
+              6. 部分模型数据是引用于
+              <a href="http://www.earthsdk.com/" target="_blank">
+                西部世界
+              </a>
+              和
+              <a href="http://www.marsgis.cn/" target="_blank">
+                火星科技
+              </a>
+              。
+            </p>
+            <p>
+              7. 如需添加额外示例或示例存在问题，请联系
+              <a href="https://github.com/cavencj" target="_blank">
+                Caven Chen
+              </a>
+              。
             </p>
           </div>
           <el-popover placement="top-start" trigger="click">

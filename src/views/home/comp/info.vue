@@ -94,15 +94,15 @@ export default {
       margin: 0 10px;
       h2 {
         text-align: center;
-        color: #333743;
-        font-weight: 300;
+        color: #000;
+        font-weight: 500;
         font-size: 1.5rem;
       }
       .desc {
         margin-top: 20px;
         min-height: 80px;
         font-size: 1.1rem;
-        text-indent: 2em;
+        //text-indent: 2em;
       }
     }
     .module_img {

@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="banner">
-      <p>基于 Cesium 二次开发的 3D WebGis 平台</p>
+      <p>基于 Cesium 构建的 <strong>三维 WebGis</strong> 开发平台</p>
       <img src="../../assets/images/banner.png" />
     </div>
     <info></info>

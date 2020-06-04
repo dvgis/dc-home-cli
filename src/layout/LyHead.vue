@@ -10,6 +10,7 @@
       <svg-icon
         icon-class="logo"
         style="width:30px;height:30px;margin-right:-5px;"
+        @on-click="gotoHome"
       ></svg-icon>
       <font style="color:#fff;margin-left:10px">D C</font>
       <sub class="hidden-md-and-down" style="margin-left:10px;font-size:12px;"
@@ -103,6 +104,9 @@ export default {
         })
       }
       this.drawer = false
+    },
+    gotoHome() {
+      window.open('https://dvgis.cn')
     },
     gotoGitHub() {
       window.open('https://github.com/Digital-Visual/dc-sdk')
@@ -234,10 +238,9 @@ export default {
 
     .icon-github {
       cursor: pointer;
-      width: 32px;
-      height: 32px;
-      margin-left: 50px;
-      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+      margin: 0 50px;
     }
   }
 

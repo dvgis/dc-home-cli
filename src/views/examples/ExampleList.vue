@@ -33,10 +33,7 @@
         <div v-if="item.children && item.children.length > 0">
           <template v-for="child in item.children">
             <div :key="child.name">
-              <p
-                style="margin-top:20px;padding-left:25px;font-size:16px;margin-bottom:10px;"
-                :id="'nav-' + child.name"
-              >
+              <p class="child-name" :id="'nav-' + child.name">
                 {{ child.label }}
               </p>
               <div
@@ -125,6 +122,15 @@ export default {
       height: 20px;
     }
   }
+
+  .child-name {
+    margin-top: 20px;
+    padding-left: 25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(64, 158, 255);
+  }
+
   .card-list {
     display: grid;
     box-shadow: 2px 2px 2px #c1c1c1;

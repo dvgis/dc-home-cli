@@ -107,8 +107,7 @@
       },
       {
         "name": "html",
-        "label": "Html图层",
-        "isPlugin": true
+        "label": "Html图层"
       },
       {
         "name": "czml",
@@ -148,8 +147,7 @@
           },
           {
             "name": "point_html",
-            "label": "Html点",
-            "isPlugin": true
+            "label": "Html点"
           }
         ]
       },
@@ -237,11 +235,36 @@
     "children": [
       {
         "name": "gltf",
-        "label": "小模型"
+        "label": "小模型",
+        "examples": [
+          {
+            "name": "model_pm",
+            "label": "管道"
+          },
+          {
+            "name": "model_gv",
+            "label": "汽车",
+            "suffix": "gif"
+          }
+        ]
       },
       {
         "name": "3dtiles",
-        "label": "大场景模型"
+        "label": "大场景模型",
+        "examples": [
+          {
+            "name": "shp",
+            "label": "矢量白膜"
+          },
+          {
+            "name": "osgb_dyt",
+            "label": "大雁搭(倾斜摄影)"
+          },
+          {
+            "name": "3dmax_yqz",
+            "label": "油气站(人工建模)"
+          }
+        ]
       }
     ]
   },
@@ -268,6 +291,10 @@
           {
             "name": "underground",
             "label": "地下模式"
+          },
+          {
+            "name": "mouse_mode",
+            "label": "鼠标模式切换"
           }
         ]
       },
@@ -286,10 +313,6 @@
           {
             "name": "popup",
             "label": "信息弹出框"
-          },
-          {
-            "name": "locationbar",
-            "label": "位置信息"
           },
           {
             "name": "hawkeyeMap",
@@ -381,7 +404,15 @@
     "children": [
       {
         "name": "datav_base",
-        "label": "基础"
+        "label": "基础",
+        "examples": [
+          {
+            "name": "heat",
+            "label": "热区图层",
+            "isPlugin": true,
+            "suffix": "gif"
+          }
+        ]
       },
       {
         "name": "echarts",
