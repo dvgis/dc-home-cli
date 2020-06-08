@@ -82,6 +82,20 @@
             "label": "双图对比"
           }
         ]
+      },
+      {
+        "name": "ter",
+        "label": "地形",
+        "examples": [
+          {
+            "name": "ter_ch",
+            "label": "中国地形"
+          },
+          {
+            "name": "ter_arcgis",
+            "label": "Arcgis地形"
+          }
+        ]
       }
     ]
   },
@@ -317,6 +331,10 @@
           {
             "name": "hawkeyeMap",
             "label": "鹰眼地图"
+          },
+          {
+            "name": "compass",
+            "label": "罗盘"
           }
         ]
       },

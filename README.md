@@ -8,7 +8,7 @@
 
 ## 网站地址
 
-> http://dc.cavencj.cn
+> http://dc.dvgis.cn
 
 ## 安装
 
@@ -29,6 +29,3 @@ yarn run publish
 ```
 
 ## Mobile
-
-![width "30%"](http://dv.cavencj.cn/images/mobile_index.png)
-![width "30%"](http://dv.cavencj.cn/images/mobile_examples.png)

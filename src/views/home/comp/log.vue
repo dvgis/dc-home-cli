@@ -82,6 +82,15 @@ export default {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .log {
+    .log-wrapper {
+      margin-left: 15% !important;
+      margin-right: 15% !important;
+    }
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -98,7 +107,7 @@ export default {
     line-height: 36px;
   }
   .log-wrapper {
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 30px;
     ul.list {
       list-style: none;
