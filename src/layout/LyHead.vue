@@ -32,11 +32,6 @@
           <el-menu-item index="cesium-api">Cesium API</el-menu-item>
         </el-submenu>
       </el-menu>
-      <img
-        src="../assets/images/github.png"
-        class="icon-github"
-        @click="gotoGitHub"
-      />
       <el-drawer
         class="menu-drawer hidden-md-and-up"
         append-to-body
@@ -107,9 +102,6 @@ export default {
     },
     gotoHome() {
       window.open('https://dvgis.cn')
-    },
-    gotoGitHub() {
-      window.open('https://github.com/Digital-Visual/dc-sdk')
     }
   }
 }
@@ -238,7 +230,7 @@ export default {
 
     .icon-github {
       cursor: pointer;
-      width: 20px;
+      width: 96px;
       height: 20px;
       margin: 0 50px;
     }

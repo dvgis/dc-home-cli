@@ -47,6 +47,15 @@
               </a>
               。
             </p>
+            <p>
+              <img
+                src="https://img.shields.io/github/package-json/v/Digital-Visual/dc-sdk?color=orange&logo=github"
+              />
+              <img
+                src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
+                style="margin-left:20px"
+              />
+            </p>
           </div>
           <el-popover placement="top-start" trigger="click">
             <sider-bar

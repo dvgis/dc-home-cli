@@ -1,8 +1,20 @@
 <template>
   <div class="home">
     <div class="banner">
-      <p>基于 Cesium 构建的 <strong>三维 WebGis</strong> 开发平台</p>
-      <img src="../../assets/images/banner.png" />
+      <p>
+        基于 Cesium 构建的 <strong>三维 WebGis</strong> 开发平台<br />
+        <img
+          src="https://img.shields.io/github/stars/Digital-Visual/dc-sdk?color=red&logo=github"
+          class="icon icon-github"
+          @click="gotoGitHub"
+        />
+        <img
+          src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
+          class="icon icon-npm"
+          @click="gotoNpm"
+        />
+      </p>
+      <img class="banner__img" src="../../assets/images/banner.png" />
     </div>
     <info></info>
     <log></log>
@@ -19,6 +31,14 @@ export default {
   },
   data() {
     return {}
+  },
+  methods: {
+    gotoGitHub() {
+      window.open('https://github.com/Digital-Visual/dc-sdk')
+    },
+    gotoNpm() {
+      window.open('https://www.npmjs.com/package/@dvgis/dc-sdk')
+    }
   }
 }
 </script>
@@ -30,9 +50,14 @@ export default {
       height: 200px !important;
       p {
         font-size: 16px !important;
+        .icon {
+          transform: scale(0.5) !important;
+        }
+        .icon-npm {
+          margin-left: -40px !important;
+        }
       }
-
-      img {
+      .banner__img {
         width: 120px !important;
       }
     }
@@ -58,8 +83,18 @@ export default {
       color: rgb(255, 255, 255);
       font-size: 30px;
       overflow: hidden;
+      .icon {
+        width: 90px;
+        height: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .icon-npm {
+        width: 151px;
+        margin-left: 30px;
+      }
     }
-    img {
+    .banner__img {
       width: 600px;
     }
   }
