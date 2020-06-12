@@ -123,6 +123,14 @@ export default {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .examples {
+    .row {
+      padding-left: 0px !important;
+    }
+  }
+}
 </style>
 
 <style lang="scss" scoped>
@@ -134,7 +142,9 @@ export default {
   .row,
   .col {
     height: calc(100vh - 90px);
-    padding: 0 0 0 10px;
+  }
+  .row {
+    padding-left: 10px;
   }
   .menu {
     height: 100%;

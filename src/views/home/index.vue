@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="banner">
-      <p>
+      <p class="animate__animated animate__bounceInLeft">
         基于 Cesium 构建的 <strong>三维 WebGis</strong> 开发平台<br />
         <img
           src="https://img.shields.io/github/stars/Digital-Visual/dc-sdk?color=red&logo=github"
