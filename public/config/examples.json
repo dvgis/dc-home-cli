@@ -395,6 +395,12 @@
         "label": "场景特效",
         "examples": [
           {
+            "name": "intro",
+            "label": "开场动画",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
             "name": "globe_rotate",
             "label": "地球自转",
             "isPlugin": true,
@@ -461,6 +467,11 @@
           },
           {
             "name": "e_qx",
+            "label": "人口迁徙",
+            "suffix": "gif"
+          },
+          {
+            "name": "e_qx_2",
             "label": "人口迁徙",
             "suffix": "gif"
           },
