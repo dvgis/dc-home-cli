@@ -234,12 +234,19 @@
         ]
       },
       {
-        "name": "plane",
-        "label": "平面要素"
-      },
-      {
         "name": "others",
-        "label": "其他要素"
+        "label": "其他要素",
+        "examples": [
+          {
+            "name": "wall",
+            "label": "墙体"
+          },
+          {
+            "name": "wall_trail",
+            "label": "流动墙体",
+            "suffix": "gif"
+          }
+        ]
       }
     ]
   },
@@ -403,6 +410,18 @@
           {
             "name": "globe_rotate",
             "label": "地球自转",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "around_view",
+            "label": "绕地环绕",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "around_point",
+            "label": "绕点环绕",
             "isPlugin": true,
             "suffix": "gif"
           },
