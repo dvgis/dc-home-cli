@@ -26,11 +26,7 @@
       >
         <el-menu-item index="index">首页</el-menu-item>
         <el-menu-item index="examples">开发示例</el-menu-item>
-        <el-submenu index="docs" popper-class="menu-box">
-          <template slot="title">开发文档</template>
-          <el-menu-item index="api">DC-SDK API </el-menu-item>
-          <el-menu-item index="cesium-api">Cesium API</el-menu-item>
-        </el-submenu>
+        <el-menu-item index="docs">开发文档</el-menu-item>
       </el-menu>
       <el-drawer
         class="menu-drawer hidden-md-and-up"
@@ -89,10 +85,8 @@ export default {
     menuSelectHandler(index) {
       if (index === 'cesium') {
         window.open('https://cesium.com/cesiumjs/')
-      } else if (index === 'api') {
-        window.open('http://resource.dvgis.cn/dc-api/api/')
-      } else if (index === 'cesium-api') {
-        window.open('https://cesium.com/docs/cesiumjs-ref-doc/')
+      } else if (index === 'docs') {
+        window.open('http://resource.dvgis.cn/dc-api')
       } else {
         this.$router.push(index).catch(err => {
           err
@@ -110,6 +104,7 @@ export default {
 <style lang="scss">
 .ly-head {
   .menu-h {
+    margin-right: 30px;
     .el-menu--horizontal.el-menu {
       border-bottom: solid 0px #e6e6e6;
       background: transparent;
