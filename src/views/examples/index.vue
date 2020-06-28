@@ -14,17 +14,18 @@
             <span>说明：</span>
             <p>1. 示例仅做参考，展现的数据只是测试数据。</p>
             <p>
-              2. 示例是以<e> DC-SDK </e>为基础开发的,该SDK中使用的 Cesium
+              2. 示例是以<em> DC-SDK </em>为基础开发的,该SDK中使用的 Cesium
               为最新版本。
             </p>
             <p>
-              3. 含有<e> [插件] </e>的示例开发时需引入 <e> DC-Plugins </e>。
+              3. 含有<em> [插件] </em>的示例开发时需引入 <em> DC-Plugins </em>。
             </p>
-            <p>4. 其他要素的示例开发时需引入<e> DC-Overlay </e>。</p>
+            <p>4. 其他要素的示例开发时需引入<em> DC-Overlay </em>。</p>
             <p>
-              5. Echarts 示例开发时需引入<e> echarts </e>和<e> DC-Chart </e>。
+              5. Echarts 示例开发时需引入<em> echarts </em>和<em> DC-Chart </em
+              >。
             </p>
-            <p>6. Mapv 示例开发时需引入<e> DC-Mapv </e>。</p>
+            <p>6. Mapv 示例开发时需引入<em> DC-Mapv </em>。</p>
             <p>
               7. 部分模型数据是引用于
               <a href="http://www.earthsdk.com/" target="_blank">
@@ -173,7 +174,7 @@ export default {
         color: #0865ba;
       }
 
-      e {
+      em {
         color: orange;
       }
     }
