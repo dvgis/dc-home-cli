@@ -179,7 +179,14 @@
           },
           {
             "name": "polyline_trail",
-            "label": "轨迹线(plugins)",
+            "label": "颜色轨迹线",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "polyline_image_trail",
+            "label": "图片轨迹线",
+            "isPlugin": true,
             "suffix": "gif"
           },
           {
