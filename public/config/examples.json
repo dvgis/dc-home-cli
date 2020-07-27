@@ -349,6 +349,10 @@
           {
             "name": "compass",
             "label": "罗盘"
+          },
+          {
+            "name": "locationbar",
+            "label": "位置信息"
           }
         ]
       },
