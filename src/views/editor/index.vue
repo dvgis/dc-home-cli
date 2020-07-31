@@ -4,8 +4,18 @@
       <div class="title">
         <h4>代码编辑器</h4>
         <div class="btn" v-if="example === 'online_code'">
-          <el-button type="warning" size="mini" icon="el-icon-refresh" @click="reset"></el-button>
-          <el-button type="success" size="mini" icon="el-icon-video-play" @click="run"></el-button>
+          <el-button
+            type="warning"
+            size="mini"
+            icon="el-icon-refresh"
+            @click="reset"
+          ></el-button>
+          <el-button
+            type="success"
+            size="mini"
+            icon="el-icon-video-play"
+            @click="run"
+          ></el-button>
         </div>
       </div>
       <div class="content">
@@ -19,15 +29,32 @@
         </el-tabs>
       </div>
     </div>
-    <div class="option hidden-md-and-down" :style="{ left: !codeVisible ? '10px' : 'calc(30% + 10px)' }">
+    <div
+      class="option hidden-md-and-down"
+      :style="{ left: !codeVisible ? '10px' : 'calc(30% + 10px)' }"
+    >
       <span v-if="!codeVisible">
-        <svg-icon icon-class="expand" class-name="svg-icon" @on-click="codeVisible = true"></svg-icon>源码
+        <svg-icon
+          icon-class="expand"
+          class-name="svg-icon"
+          @on-click="codeVisible = true"
+        ></svg-icon
+        >源码
       </span>
       <span v-if="codeVisible">
-        <svg-icon icon-class="shrink" class-name="svg-icon" @on-click="codeVisible = false"></svg-icon>收缩
+        <svg-icon
+          icon-class="shrink"
+          class-name="svg-icon"
+          @on-click="codeVisible = false"
+        ></svg-icon
+        >收缩
       </span>
     </div>
-    <div class="example" ref="example" :style="{ width: codeVisible ? '70%' : '100%', height: '100%' }"></div>
+    <div
+      class="example"
+      ref="example"
+      :style="{ width: codeVisible ? '70%' : '100%', height: '100%' }"
+    ></div>
   </div>
 </template>
 <script>
