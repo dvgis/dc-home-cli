@@ -29,6 +29,8 @@ module.exports = {
     Hub: false,
     echarts: false,
     axios: false,
+    DC: false,
+    Cesium: false,
     '%=': false
   },
   parserOptions: {

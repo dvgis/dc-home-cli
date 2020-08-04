@@ -155,11 +155,6 @@
             "label": "一万图标点"
           },
           {
-            "name": "point_custom",
-            "label": "自定义图标点",
-            "isPlugin": true
-          },
-          {
             "name": "point_html",
             "label": "Html点"
           }
@@ -244,6 +239,14 @@
         "name": "others",
         "label": "其他要素",
         "examples": [
+          {
+            "name": "point_custom",
+            "label": "自定义图标点"
+          },
+          {
+            "name": "label_custom",
+            "label": "自定义文字点"
+          },
           {
             "name": "wall",
             "label": "墙体"
