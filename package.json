@@ -1,7 +1,9 @@
 {
-  "name": "vue-element-formwork",
+  "name": "@dvgis/dc-home",
   "version": "0.1.0",
   "private": true,
+  "repository": "https://github.com/dvgis/dc-home.git",
+  "homepage": "http://www.dvgis.cn",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
