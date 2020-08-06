@@ -216,7 +216,7 @@
       },
       {
         "name": "circle",
-        "label": "园要素",
+        "label": "圆要素",
         "examples": [
           {
             "name": "circle",
@@ -448,6 +448,36 @@
           {
             "name": "radar_scan",
             "label": "雷达扫描",
+            "isPlugin": true,
+            "suffix": "gif"
+          }
+        ]
+      },
+      {
+        "name": "roaming",
+        "label": "轨迹漫游",
+        "examples": [
+          {
+            "name": "roaming_free",
+            "label": "自由视角",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "roaming_fp",
+            "label": "第一视角",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "roaming_tp",
+            "label": "第三视角",
+            "isPlugin": true,
+            "suffix": "gif"
+          },
+          {
+            "name": "roaming_tracked",
+            "label": "跟随视角",
             "isPlugin": true,
             "suffix": "gif"
           }
