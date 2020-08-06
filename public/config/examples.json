@@ -331,7 +331,7 @@
       },
       {
         "name": "widget",
-        "label": "小组件",
+        "label": "场景组件",
         "examples": [
           {
             "name": "tooltip",
@@ -343,7 +343,7 @@
           },
           {
             "name": "popup",
-            "label": "信息弹出框"
+            "label": "信息弹框"
           },
           {
             "name": "hawkeyeMap",
