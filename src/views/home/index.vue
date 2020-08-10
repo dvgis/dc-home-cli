@@ -101,7 +101,11 @@ export default {
       }
     }
     .banner__img {
-      width: 600px;
+      width: 550px;
+      cursor: pointer;
+      &:hover {
+        animation: img_rotate 12s linear infinite;
+      }
     }
   }
 }

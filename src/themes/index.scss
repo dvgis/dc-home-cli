@@ -21,3 +21,13 @@ span,
 div {
   outline: none;
 }
+
+
+@keyframes img_rotate {
+  0%{
+    transform: rotateZ(0deg);/*从0度开始*/
+  }
+  100%{
+    transform: rotateZ(360deg);/*360度结束*/
+  }
+}
