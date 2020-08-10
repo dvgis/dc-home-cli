@@ -450,6 +450,17 @@
             "label": "雷达扫描",
             "isPlugin": true,
             "suffix": "gif"
+          },
+          {
+            "name": "brightness",
+            "label": "场景明亮",
+            "isPlugin": true
+          },
+          {
+            "name": "snow",
+            "label": "雪天场景",
+            "isPlugin": true,
+            "suffix": "gif"
           }
         ]
       },

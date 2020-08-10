@@ -7,14 +7,20 @@
           src="https://img.shields.io/github/stars/Digital-Visual/dc-sdk?color=red&logo=github"
           class="icon icon-github"
           @click="gotoGitHub"
+          alt="github"
         />
         <img
           src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
           class="icon icon-npm"
           @click="gotoNpm"
+          alt="npm"
         />
       </p>
-      <img class="banner__img" src="../../assets/images/banner.png" />
+      <img
+        class="banner__img"
+        src="../../assets/images/banner.png"
+        alt="banner"
+      />
     </div>
     <info></info>
     <log></log>
