@@ -46,11 +46,13 @@
             </p>
             <p>
               <img
-                src="https://img.shields.io/github/package-json/v/Digital-Visual/dc-sdk?color=orange&logo=github"
+                src="https://img.shields.io/github/package-json/v/dvgis/dc-sdk?color=orange&logo=github"
+                alt="github"
               />
               <img
                 src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
                 style="margin-left:20px"
+                alt="npm"
               />
             </p>
           </div>

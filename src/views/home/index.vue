@@ -4,7 +4,7 @@
       <p class="animate__animated animate__bounceInLeft">
         基于 Cesium 构建的 <strong>三维 WebGis</strong> 开发平台<br />
         <img
-          src="https://img.shields.io/github/stars/Digital-Visual/dc-sdk?color=red&logo=github"
+          src="https://img.shields.io/github/stars/dvgis/dc-sdk?color=red&logo=github"
           class="icon icon-github"
           @click="gotoGitHub"
           alt="github"
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     gotoGitHub() {
-      window.open('https://github.com/Digital-Visual/dc-sdk')
+      window.open('https://github.com/dvgis/dc-sdk')
     },
     gotoNpm() {
       window.open('https://www.npmjs.com/package/@dvgis/dc-sdk')
