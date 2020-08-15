@@ -457,11 +457,22 @@
             "isPlugin": true
           },
           {
+            "name": "night_vision",
+            "label": "夜视场景",
+            "isPlugin": true
+          },
+          {
             "name": "snow",
             "label": "雪天场景",
             "isPlugin": true,
             "suffix": "gif"
+          },
+          {
+            "name": "fog",
+            "label": "雾天场景",
+            "isPlugin": true
           }
+
         ]
       },
       {
@@ -562,57 +573,47 @@
         "examples": [
           {
             "name": "m_point",
-            "label": "点",
-            "isPlugin": true
+            "label": "点"
           },
           {
             "name": "m_point_d",
             "label": "动画点)",
-            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_point_i",
-            "label": "强度点",
-            "isPlugin": true
+            "label": "强度点"
           },
           {
             "name": "m_grid",
-            "label": "方格图",
-            "isPlugin": true
+            "label": "方格图"
           },
           {
             "name": "m_grid_d",
             "label": "方格动画图",
-            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_honeycomb",
-            "label": "蜂巢图",
-            "isPlugin": true
+            "label": "蜂巢图"
           },
           {
             "name": "m_honeycomb_d",
             "label": "蜂巢动画图",
-            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_polyline",
-            "label": "线",
-            "isPlugin": true
+            "label": "线"
           },
           {
             "name": "m_polyline_d",
             "label": "动画线",
-            "isPlugin": true,
             "suffix": "gif"
           },
           {
             "name": "m_polyline_i",
-            "label": "强度线",
-            "isPlugin": true
+            "label": "强度线"
           }
         ]
       }
