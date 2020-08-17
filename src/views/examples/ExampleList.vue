@@ -51,6 +51,7 @@
                   <img
                     :src="getImgPath(item.name, example)"
                     @click="gotoEditor(item.name, example)"
+                    alt="example"
                   />
                   <p>
                     {{ example.label

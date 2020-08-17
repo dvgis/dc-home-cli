@@ -13,14 +13,13 @@
           <div class="tips">
             <span>说明：</span>
             <p>1. 示例仅做参考，展现的数据只是测试数据。</p>
-            <p>
-              2. 示例是以<em> DC-SDK </em>为基础开发的,该SDK中使用的 Cesium
-              为最新版本。
-            </p>
+            <p>2. 示例是使用<em> DC-SDK </em>开发的。</p>
             <p>
               3. 含有<em> [插件] </em>的示例开发时需引入 <em> DC-Plugins </em>。
             </p>
-            <p>4. 其他要素的示例开发时需引入<em> DC-Overlay </em>。</p>
+            <p>
+              4. <em> 其他要素 </em>的示例开发时需引入<em> DC-Overlay </em>。
+            </p>
             <p>
               5. Echarts 示例开发时需引入<em> echarts </em>和<em> DC-Chart </em
               >。
@@ -45,14 +44,17 @@
               。
             </p>
             <p>
+              <span>DC-SDK:</span>
               <img
                 src="https://img.shields.io/github/package-json/v/dvgis/dc-sdk?color=orange&logo=github"
                 alt="github"
+                @click="gotoGithub('dc')"
               />
+              Cesium:
               <img
-                src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
-                style="margin-left:20px"
-                alt="npm"
+                src="https://img.shields.io/github/package-json/v/CesiumGS/Cesium?color=orange&logo=github"
+                alt="github"
+                @click="gotoGithub('cesium')"
               />
             </p>
           </div>
@@ -67,6 +69,7 @@
               slot="reference"
               src="../../assets/svg/bg/nav.svg"
               class="nav-icon hidden-md-and-up"
+              alt="nav"
             />
           </el-popover>
           <example-list :examples-data="examplesData"></example-list>
@@ -100,6 +103,13 @@ export default {
           this.$refs['content'].scrollTop = el.offsetTop - 15
         }
       }
+    },
+    gotoGithub(type) {
+      let url = 'https://github.com/dvgis/dc-sdk/releases'
+      if (type === 'cesium') {
+        url = 'https://github.com/CesiumGS/Cesium/releases'
+      }
+      window.open(url)
     }
   },
   mounted() {
@@ -175,7 +185,11 @@ export default {
         text-decoration: none;
         color: #0865ba;
       }
-
+      img {
+        vertical-align: middle;
+        cursor: pointer;
+        margin: 0 10px 0 8px;
+      }
       em {
         color: orange;
       }
