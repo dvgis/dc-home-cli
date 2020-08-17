@@ -120,6 +120,10 @@
         "label": "GeoJson图层"
       },
       {
+        "name": "html",
+        "label": "Html图层"
+      },
+      {
         "name": "czml",
         "label": "Czml图层",
         "isPlugin": true,
