@@ -21,12 +21,16 @@
               4. <em> 其他要素 </em>的示例开发时需引入<em> DC-Overlay </em>。
             </p>
             <p>
-              5. Echarts 示例开发时需引入<em> echarts </em>和<em> DC-Chart </em
+              5. <em> 要素标绘 </em>的示例开发时需引入<em> DC-Overlay</em> 和
+              <em>DC-Plot</em>。
+            </p>
+            <p>
+              6. Echarts 示例开发时需引入<em> echarts </em>和<em> DC-Chart </em
               >。
             </p>
-            <p>6. Mapv 示例开发时需引入<em> DC-Mapv </em>。</p>
+            <p>7. Mapv 示例开发时需引入<em> DC-Mapv </em>。</p>
             <p>
-              7. 部分模型数据是引用于
+              8. 部分模型数据是引用于
               <a href="http://www.earthsdk.com/" target="_blank">
                 西部世界
               </a>
@@ -37,7 +41,7 @@
               。
             </p>
             <p>
-              8. 如需添加额外示例或示例存在问题，请联系
+              9. 如需添加额外示例或示例存在问题，请联系
               <a href="https://github.com/cavencj" target="_blank">
                 Caven Chen
               </a>

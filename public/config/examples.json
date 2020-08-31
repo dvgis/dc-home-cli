@@ -259,6 +259,16 @@
             "suffix": "gif"
           }
         ]
+      },
+      {
+        "name": "plot",
+        "label": "标绘",
+        "examples": [
+          {
+            "name": "plot-overlay",
+            "label": "要素标绘"
+          }
+        ]
       }
     ]
   },

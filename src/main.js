@@ -1,9 +1,8 @@
-/*
+/**
  * @Author: Caven
  * @Date: 2019-12-23 13:28:54
- * @Last Modified by: Caven
- * @Last Modified time: 2020-02-18 10:07:43
  */
+
 import Vue from 'vue'
 import appLoader from './App.Loader'
 ;(async () => {
