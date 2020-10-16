@@ -1,0 +1,11 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+    let baselayer = DC.ImageryLayerFactory.createCoordImageryLayer()
+    viewer.addBaseLayer(baselayer)
+  }
+
+  DC.ready(initViewer)
+</script>

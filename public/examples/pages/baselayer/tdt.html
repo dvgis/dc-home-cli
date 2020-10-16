@@ -1,0 +1,50 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+    let key = '1c3ff1358b17417f1782dd1ae7bdd00a'
+    let cva = DC.ImageryLayerFactory.createTdtImageryLayer({
+      key,
+      style: 'cva'
+    })
+
+    let vec = DC.ImageryLayerFactory.createTdtImageryLayer({
+      key
+    })
+
+    let img = DC.ImageryLayerFactory.createTdtImageryLayer({
+      key,
+      style: 'img'
+    })
+
+    let ter = DC.ImageryLayerFactory.createTdtImageryLayer({
+      key,
+      style: 'ter'
+    })
+
+    viewer.addBaseLayer(img, {
+      name: '影像',
+      iconUrl: 'examples/images/icon/img.png'
+    })
+    viewer.addBaseLayer([img, cva], {
+      name: '影像',
+      iconUrl: 'examples/images/icon/img.png'
+    })
+
+    viewer.addBaseLayer([vec, cva], {
+      name: '电子',
+      iconUrl: 'examples/images/icon/elec.png'
+    })
+
+    viewer.addBaseLayer([ter, cva], {
+      name: '地形',
+      iconUrl: 'examples/images/icon/ter.png'
+    })
+
+    viewer.zoomToPosition(
+      new DC.Position(105.565571, 31.984708, 15362816, 0, -90)
+    )
+  }
+  DC.ready(initViewer)
+</script>

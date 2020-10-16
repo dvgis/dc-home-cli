@@ -1,0 +1,32 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+
+  function generatePosition(num) {
+    var list = []
+    for (var i = 0; i < num; i++) {
+      var lng = 120.38105869 + Math.random() * 0.5
+      var lat = 31.10115627 + Math.random() * 0.5
+      list.push(new DC.Position(lng, lat))
+    }
+    return list
+  }
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+    let baselayer = DC.ImageryLayerFactory.createGoogleImageryLayer({
+      style: 'img'
+    })
+
+    viewer.addBaseLayer(baselayer)
+
+    let layer = new DC.TilesetLayer('layer')
+    viewer.addLayer(layer)
+    let tileset = new DC.Tileset(
+      'http://earthsdk.com/v/last/Apps/assets/dayanta/tileset.json'
+    )
+    tileset.setHeight(-420)
+    layer.addOverlay(tileset)
+    viewer.flyTo(tileset)
+  }
+  DC.ready(initViewer)
+</script>

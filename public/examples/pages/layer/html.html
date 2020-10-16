@@ -1,0 +1,38 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+
+  function generatePosition(num) {
+    var list = []
+    for (var i = 0; i < num; i++) {
+      var lng = 120.38105869 + Math.random() * 0.5
+      var lat = 31.10115627 + Math.random() * 0.5
+      list.push(new DC.Position(lng, lat))
+    }
+    return list
+  }
+
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+    let baselayer = DC.ImageryLayerFactory.createGoogleImageryLayer({
+      style: 'img'
+    })
+
+    viewer.addBaseLayer(baselayer)
+    let layer = new DC.HtmlLayer('layer')
+    viewer.addLayer(layer)
+    let positions = generatePosition(5)
+    positions.forEach((item, index) => {
+      let divIcon = new DC.DivIcon(
+        item,
+        `<div style="width:200px;background:rgba(255,255,0,0.2)">我是一个div，你可以对我添加css样式和内容</div>`
+      )
+      layer.addOverlay(divIcon)
+    })
+
+    viewer.flyToPosition(
+      new DC.Position(120.38105869, 31.10115627, 10000, 0, -90)
+    )
+  }
+  DC.ready(initViewer)
+</script>

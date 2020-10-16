@@ -1,0 +1,34 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+
+    let baselayer = DC.ImageryLayerFactory.createGoogleImageryLayer({
+      style: 'img'
+    })
+    viewer.addBaseLayer(baselayer, {
+      iconUrl: 'examples/images/icon/img.png',
+      name: '地图'
+    })
+
+    let baselayer_elc = DC.ImageryLayerFactory.createGoogleImageryLayer()
+    viewer.addBaseLayer(baselayer_elc, {
+      iconUrl: 'examples/images/icon/elec.png',
+      name: '电子'
+    })
+
+    let baselayer_ter = DC.ImageryLayerFactory.createGoogleImageryLayer({
+      style: 'ter'
+    })
+    viewer.addBaseLayer(baselayer_ter, {
+      iconUrl: 'examples/images/icon/img.png',
+      name: '地形'
+    })
+
+    viewer.zoomToPosition(
+      new DC.Position(105.565571, 31.984708, 15362816, 0, -90)
+    )
+  }
+  DC.ready(initViewer)
+</script>

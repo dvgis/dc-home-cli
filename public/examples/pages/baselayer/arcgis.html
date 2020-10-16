@@ -1,0 +1,47 @@
+<div id="viewer-container"></div>
+<script>
+  let viewer = undefined
+  function initViewer() {
+    viewer = new DC.Viewer('viewer-container')
+    let baselayer = DC.ImageryLayerFactory.createArcGisImageryLayer({
+      url:
+        'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+    })
+    viewer.addBaseLayer(baselayer, {
+      iconUrl: 'examples/images/icon/img.png',
+      name: '影像'
+    })
+
+    let baselayer_shaded = DC.ImageryLayerFactory.createArcGisImageryLayer({
+      url:
+        'https://services.arcgisonline.com/arcgis/rest/services/World_Shaded_Relief/MapServer'
+    })
+    viewer.addBaseLayer(baselayer_shaded, {
+      iconUrl: 'examples/images/icon/elec.png',
+      name: '电子'
+    })
+
+    let baselayer_street = DC.ImageryLayerFactory.createArcGisImageryLayer({
+      url:
+        'https://services.arcgisonline.com/arcgis/rest/services/World_Physical_Map/MapServer'
+    })
+    viewer.addBaseLayer(baselayer_street, {
+      iconUrl: 'examples/images/icon/ter.png',
+      name: '地形'
+    })
+
+    let baselayer_ter = DC.ImageryLayerFactory.createArcGisImageryLayer({
+      url:
+        'https://services.arcgisonline.com/arcgis/rest/services/World_Terrain_Base/MapServer'
+    })
+    viewer.addBaseLayer(baselayer_ter, {
+      iconUrl: 'examples/images/icon/ter.png',
+      name: '地形'
+    })
+
+    viewer.zoomToPosition(
+      new DC.Position(105.565571, 31.984708, 15362816, 0, -90)
+    )
+  }
+  DC.ready(initViewer)
+</script>
