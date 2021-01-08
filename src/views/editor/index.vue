@@ -174,9 +174,9 @@ export default {
             let exampleHtml = examplePage.data
             if (exampleHtml && this.tempHtml) {
               let index = exampleHtml.indexOf('<script>')
-              this.oriHtmlStr = exampleHtml.substr(0, index)
+              this.oriHtmlStr = exampleHtml.substring(0, index)
               this.oriJsStr = exampleHtml
-                .substr(index)
+                .substring(index)
                 .replace(/<\/?script>\n/g, '')
               this.jsStr = this.oriJsStr
               this.htmlStr = this.oriHtmlStr
