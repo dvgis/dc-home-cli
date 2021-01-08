@@ -3,7 +3,7 @@
     <div class="code hidden-md-and-down" v-show="codeVisible">
       <div class="title">
         <h4>代码编辑器</h4>
-        <div class="btn" v-if="example === 'online_code'">
+        <div class="btn">
           <el-button
             type="warning"
             size="mini"
