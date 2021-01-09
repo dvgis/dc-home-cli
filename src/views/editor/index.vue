@@ -177,7 +177,7 @@ export default {
               this.oriHtmlStr = exampleHtml.substring(0, index)
               this.oriJsStr = exampleHtml
                 .substring(index)
-                .replace(/<\/?script>\n/g, '')
+                .replace(/<\/?script>\n?/g, '')
               this.jsStr = this.oriJsStr
               this.htmlStr = this.oriHtmlStr
               this.loadExample()
