@@ -3,9 +3,7 @@
     <el-divider></el-divider>
     <div class="copyright">
       版权所有 &copy; {{ new Date().getFullYear() }} 数字视觉(Digital Visual)
-      <a href="http://www.beian.miit.gov.cn" target="_blank"
-        >苏ICP备17074644号-3</a
-      >
+      <a href="http://beian.miit.gov.cn" target="_blank">苏ICP备17074644号-3</a>
     </div>
   </footer>
 </template>

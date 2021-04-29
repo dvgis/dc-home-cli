@@ -6,13 +6,19 @@
         <img
           src="https://img.shields.io/github/stars/dvgis/dc-sdk?color=red&logo=github"
           class="icon icon-github"
-          @click="gotoGitHub"
+          @click="gotoPage('github')"
           alt="github"
         />
         <img
-          src="https://img.shields.io/npm/dw/@dvgis/dc-sdk?logo=npm"
+          src="https://img.shields.io/npm/v/@dvgis/dc-sdk?color=blue&logo=npm"
           class="icon icon-npm"
-          @click="gotoNpm"
+          @click="gotoPage('npm')"
+          alt="npm"
+        />
+        <img
+          src="https://img.shields.io/npm/dt/@dvgis/dc-sdk?logo=npm"
+          class="icon icon-npm"
+          @click="gotoPage('npm')"
           alt="npm"
         />
       </p>
@@ -39,11 +45,12 @@ export default {
     return {}
   },
   methods: {
-    gotoGitHub() {
-      window.open('https://github.com/dvgis/dc-sdk')
-    },
-    gotoNpm() {
-      window.open('https://www.npmjs.com/package/@dvgis/dc-sdk')
+    gotoPage(type) {
+      if (type === 'github') {
+        window.open('https://github.com/dvgis/dc-sdk')
+      } else if (type === 'npm') {
+        window.open('https://www.npmjs.com/package/@dvgis/dc-sdk')
+      }
     }
   }
 }
@@ -90,13 +97,11 @@ export default {
       font-size: 30px;
       overflow: hidden;
       .icon {
-        width: 90px;
         height: 20px;
         cursor: pointer;
         margin-top: 20px;
       }
       .icon-npm {
-        width: 151px;
         margin-left: 30px;
       }
     }

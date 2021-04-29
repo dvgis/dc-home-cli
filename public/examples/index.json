@@ -1,0 +1,80 @@
+{
+  "dev":[
+    {
+      "name": "info",
+      "label": "框架简介",
+      "examples": [
+        {
+          "name": "start",
+          "label": "开始"
+        },
+        {
+          "name": "coord",
+          "label": "底图坐标"
+        },
+        {
+          "name": "online_code",
+          "label": "在线开发"
+        }
+      ]
+    },
+    {
+      "name": "baselayer",
+      "label": "基础底图",
+      "children": [
+        {
+          "name": "online",
+          "label": "在线地图",
+          "examples": [
+            {
+              "name": "google",
+              "label": "谷歌"
+            },
+            {
+              "name": "tdt",
+              "label": "天地图"
+            },
+            {
+              "name": "baidu",
+              "label": "百度"
+            },
+            {
+              "name": "amap",
+              "label": "高德"
+            },
+            {
+              "name": "tencent",
+              "label": "腾讯"
+            },
+            {
+              "name": "arcgis",
+              "label": "Arcgis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "layer",
+      "label": "数据图层",
+      "examples": [
+        {
+          "name": "vector",
+          "label": "矢量图层"
+        },
+        {
+          "name": "cluster",
+          "label": "聚合图层"
+        },
+        {
+          "name": "tileset",
+          "label": "3DTiles图层"
+        },
+        {
+          "name": "html",
+          "label": "Html图层"
+        }
+      ]
+    }
+  ]
+}

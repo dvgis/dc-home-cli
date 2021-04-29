@@ -86,7 +86,7 @@ export default {
       if (index === 'cesium') {
         window.open('https://cesium.com/cesiumjs/')
       } else if (index === 'docs') {
-        window.open('https://resource.dvgis.cn/dc-api')
+        window.open('https://resource.dvgis.cn/dc-docs/v2.x/zh/')
       } else {
         this.$router.push(index).catch(err => {
           err

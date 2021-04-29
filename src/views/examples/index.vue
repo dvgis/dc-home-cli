@@ -12,53 +12,37 @@
         <div class="content" ref="content">
           <div class="tips">
             <span>说明：</span>
-            <p>1. 示例仅做参考，展现的数据只是测试数据。</p>
-            <p>2. 示例是使用<em> DC-SDK </em>开发的。</p>
+            <p>1. 示例仅做参考，示例中数据都为测试数据。</p>
+            <p>2. 示例都是基于<em> DC-SDK </em> 开发的。</p>
             <p>
-              3. 含有<em> [插件] </em>的示例开发时需引入 <em> DC-Plugins </em>。
+              3. Echarts 示例开发时需引入<em> Echarts </em>和<em> DC-Chart </em>
+              模块。
             </p>
+            <p>4. Mapv 示例开发时需引入<em> DC-Mapv </em>模块。</p>
             <p>
-              4. <em> 其他要素 </em>的示例开发时需引入<em> DC-Overlay </em>。
-            </p>
-            <p>
-              5. <em> 要素标绘 </em>的示例开发时需引入<em> DC-Overlay</em> 和
-              <em>DC-Plot</em>。
-            </p>
-            <p>
-              6. Echarts 示例开发时需引入<em> echarts </em>和<em> DC-Chart </em
-              >。
-            </p>
-            <p>7. Mapv 示例开发时需引入<em> DC-Mapv </em>。</p>
-            <p>
-              8. 部分模型数据是引用于
-              <a href="http://www.earthsdk.com/" target="_blank">
-                西部世界
-              </a>
-              和
-              <a href="http://www.marsgis.cn/" target="_blank">
-                火星科技
+              5. 部分模型数据引用于
+              <a href="http://www.cesiumlab.com/" target="_blank">
+                Cesium 实验室
               </a>
               。
             </p>
             <p>
-              9. 如需添加额外示例或示例存在问题，请联系
+              6. 如果示例存在问题或需要改进，请联系
               <a href="https://github.com/cavencj" target="_blank">
                 Caven Chen
               </a>
               。
             </p>
             <p>
-              <span>DC-SDK:</span>
               <img
-                src="https://img.shields.io/github/package-json/v/dvgis/dc-sdk?color=orange&logo=github"
+                src="https://img.shields.io/npm/v/@dvgis/dc-sdk?color=blue&logo=npm"
                 alt="github"
-                @click="gotoGithub('dc')"
+                @click="gotoPage('npm')"
               />
-              Cesium:
               <img
-                src="https://img.shields.io/github/package-json/v/CesiumGS/Cesium?color=orange&logo=github"
+                src="https://img.shields.io/npm/dt/@dvgis/dc-sdk?style=flat&logo=npm"
                 alt="github"
-                @click="gotoGithub('cesium')"
+                @click="gotoPage('npm')"
               />
             </p>
           </div>
@@ -96,8 +80,8 @@ export default {
   },
   methods: {
     getExamplesData() {
-      this.$http.get('config/examples.json').then(res => {
-        this.examplesData = res.data || []
+      this.$http.get('examples/index.json').then(res => {
+        this.examplesData = res.data.dev || []
       })
     },
     selectMenuHandler(value) {
@@ -108,12 +92,12 @@ export default {
         }
       }
     },
-    gotoGithub(type) {
-      let url = 'https://github.com/dvgis/dc-sdk/releases'
-      if (type === 'cesium') {
-        url = 'https://github.com/CesiumGS/Cesium/releases'
+    gotoPage(type) {
+      if (type === 'github') {
+        window.open('https://github.com/dvgis/dc-sdk')
+      } else if (type === 'npm') {
+        window.open('https://www.npmjs.com/package/@dvgis/dc-sdk')
       }
-      window.open(url)
     }
   },
   mounted() {
